@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+header {
+  padding: 47px 0;
+  background: #fff;
+}
+.header-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.logo,
+.socialmedia {
+  display: inline-block;
+  width: 470px;
+}
+
+.socialmedia {
+  text-align: right;
+}
+.social-link {
+  margin: 5px;
+}
+.yellow-section {
+  background: rgb(250, 201, 96);
+}
+.main-content,
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 54px;
+  align-items: center;
+}
+.grey-section {
+  background: rgb(242, 242, 242);
+}
+.white-section {
+  background: #fff;
+}
+h1 {
+  color: rgb(138, 109, 47);
+  font-size: 44px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  margin-top: 102px;
+}
+.frm {
+  padding-bottom: 107px;
+}
+.frm input {
+  color: rgb(153, 153, 153);
+  font-size: 30px;
+  letter-spacing: 0%;
+  border-radius: 2px 0px 0px 2px;
+  background: rgb(255, 255, 255);
+  border: none;
+  padding: 0 36px;
+  width: 560px;
+  height: 54px;
+  margin-right: 3px;
+}
+.frm button {
+  width: 240px;
+  height: 54px;
+  border-radius: 0px 2px 2px 0px;
+  background: rgb(168, 134, 61);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: none;
+}
+.text-h3 {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  margin-top: 77px;
+  margin-bottom: 32px;
+}
+.text-content {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.infinity {
+  margin-top: 56px;
+  margin-bottom: 81px;
+}
+.telephone {
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+.text-tyf {
+  color: rgb(138, 109, 47);
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  margin-top: 54px;
+  margin-bottom: 8px;
+}
+.button-last {
+  margin-top: 10px;
+  width: 61px;
+  height: 22px;
+  border: 1px solid rgb(117, 134, 150);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 107px;
+}
+.footer-logo {
+  margin-top: 88px;
+  margin-bottom: 24px;
+}
+.footer-socia {
+  margin-bottom: 40px;
+}
+.footer-socia a {
+  margin: 0 18px;
+}
+.footer-socia img {
+  width: 18px;
+  height: auto;
+}
