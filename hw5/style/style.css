@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.diya,
+.flag-lft,
+.flag-mdl {
+  /* position: relative; */
+  width: 512px;
+  height: 512px;
+}
+.diya {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.diya img {
+  position: absolute;
+  top: 128.64px;
+  left: 101px;
+}
+.flag {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  right: 216px;
+  bottom: 109px;
+}
+.blue {
+  border-radius: 6px 6px 0 0;
+  width: 80px;
+  height: 30px;
+  background: rgb(33, 55, 252);
+}
+.yellow {
+  border-radius: 0 0 6px 6px;
+  width: 80px;
+  height: 30px;
+  background: rgb(255, 206, 34);
+}
+.flag-mdl {
+  z-index: 2;
+  position: relative;
+  top: 395px;
+  left: 441px;
+  background-color: rgb(255, 206, 34);
+}
+.flag-mdl div {
+  position: absolute;
+  width: 512px;
+  height: 256px;
+  background: rgb(33, 55, 252);
+}
+.flag-mdl img {
+  position: absolute;
+  left: 10.99%;
+  top: 28.3%;
+}
+.flag-lft {
+  position: absolute;
+  top: 811px;
+  left: 856px;
+  background-color: white;
+  border-bottom: 2px solid rgb(33, 55, 252);
+  border-top: 2px solid rgb(33, 55, 252);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.circl {
+  position: relative;
+  top: 34px;
+  left: 34px;
+  background-color: rgb(255, 206, 34);
+  width: 444px;
+  height: 444px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.circl div {
+  background-color: rgb(33, 55, 252);
+  width: 444px;
+  height: 222px;
+  border-radius: 100% 100% 0 0;
+}
+.circl img {
+  position: absolute;
+  width: 358.44px;
+  height: 203.74px;
+  top: 215px;
+  left: 43px;
+  /* z-index: 1; */
+}
