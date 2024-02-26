@@ -17,11 +17,15 @@ header {
   width: 1614px;
   margin-left: 80px;
   margin-top: 40px;
+  font-size: 0;
 }
 .h-left,
 .h-right {
   display: inline-block;
   width: 807px;
+}
+.h-left {
+  font-size: 24px;
 }
 .h-right {
   text-align: right;
@@ -42,7 +46,7 @@ header {
 .main-content {
   margin-top: 110px;
   margin-left: 80px;
-  width: 989px;
+  width: 1000px;
 }
 .genre {
   font-size: 32px;
@@ -151,18 +155,25 @@ h3 {
   margin-left: 59px;
   margin-top: 15px;
 }
+.week-line {
+  width: 918px;
+  font-size: 0;
+}
+.pop-week,
 .shevron-icon {
-  position: absolute;
-  left: 880px;
-  bottom: 135px;
+  display: inline-block;
+  width: 459px;
+}
+.shevron-icon {
+  font-size: 38px;
+  text-align: right;
+  color: #ffffff;
 }
 .shevron-icon i {
   margin-right: 24px;
 }
-.sh-left,
-.sh-right {
-  font-size: 38px;
-  color: #ffffff;
+.shevron-icon i:last-child {
+  margin-right: 0;
 }
 .sh-left {
   color: rgb(167, 166, 166);
