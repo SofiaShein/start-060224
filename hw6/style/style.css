@@ -1,10 +1,12 @@
 * {
-  margin: 0;
   box-sizing: border-box;
 }
 body {
   background: url(../img/Netflix_back.png);
+  background-color: black;
   background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -12,126 +14,203 @@ body {
   font-style: normal;
   color: #ffffff;
   text-align: left;
+  margin: 0;
+}
+main {
+  width: 1614px;
+  margin: 0 auto;
 }
 header {
-  width: 1614px;
-  margin-left: 80px;
-  margin-top: 40px;
-  font-size: 0;
+  display: flex;
+  padding: 40px 0 118px 0;
+  justify-content: space-between;
 }
 .h-left,
 .h-right {
-  display: inline-block;
-  width: 807px;
+  display: flex;
+  align-items: center;
 }
 .h-left {
-  font-size: 24px;
+  column-gap: 16px;
 }
 .h-right {
-  text-align: right;
+  column-gap: 45px;
 }
 .h-right img {
   width: 74px;
 }
 .glass-search {
-  font-size: 43px;
+  font-size: 35px;
   color: #ffffff;
-  margin-right: 45px;
 }
-.vertical-ln {
-  border-right: 3px solid rgb(255, 255, 255);
-  height: 44px;
-  margin: 0 22px 0 16px;
+.date {
+  font-size: 24px;
+  line-height: 28px;
+  display: inline-block;
+  padding-left: 29px;
+  position: relative;
+}
+.date::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
 }
 .main-content {
-  margin-top: 110px;
-  margin-left: 80px;
-  width: 1000px;
+  width: 897px;
 }
-.genre {
+.genre span {
+  display: inline-block;
+  padding: 0 23px;
+  position: relative;
   font-size: 32px;
   font-weight: 500;
   line-height: 39px;
 }
+.genre span::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 39px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+}
+.genre span:first-child {
+  padding-left: 0;
+}
+.genre span:last-child::before {
+  display: none;
+}
 .title-s {
-  margin-top: 35px;
+  margin: 35px 0;
   font-size: 64px;
   font-weight: 800;
   line-height: 77px;
-  letter-spacing: 5.5%;
+  letter-spacing: 5.5px;
 }
 .about-s {
-  margin-top: 17px;
+  display: flex;
+}
+.info-item {
   font-size: 29px;
   font-weight: 400;
+  line-height: 1;
+  position: relative;
+  padding: 0 23px;
+}
+.info-item::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+.info-item:first-child {
+  padding-left: 0;
+}
+.info-item:last-child::after {
+  display: none;
+}
+.gray-txt {
+  color: rgb(167, 166, 166);
 }
 .text {
-  margin-top: 16px;
+  margin-top: 17px;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
   color: rgb(167, 166, 166);
 }
-.gray-txt {
-  color: rgb(167, 166, 166);
-}
+
 .star {
   margin-top: 22px;
+  font-size: 28px;
+  display: flex;
+  column-gap: 16px;
 }
 .star-full {
-  width: 29.44px;
-  height: 28px;
   color: #ffd43b;
 }
 .star-empty {
-  width: 29.44px;
-  height: 28px;
   color: #ffffff;
 }
 .buttons {
-  margin-top: 53px;
+  padding: 54px 0;
+  display: flex;
+  column-gap: 50px;
 }
-.player,
-.episod {
-  vertical-align: middle;
-  color: rgb(255, 255, 255);
-  width: 272px;
-  height: 64px;
+.player {
   border-radius: 10px;
+  border: 3px solid rgb(213, 13, 31);
+  background-color: rgb(213, 13, 31);
+  padding: 16px 34px;
+  color: rgb(255, 255, 255);
   font-size: 22px;
   font-weight: 500;
   line-height: 141.52%;
 }
-.player {
-  border: none;
-  background-color: rgb(213, 13, 31);
-  margin-right: 50px;
-}
-.player i {
-  margin-left: 16px;
-}
-.play-crcl {
-  vertical-align: middle;
-  color: #ffffff;
-  font-size: 28px;
+.player:hover {
+  border: 3px solid white;
 }
 .episod {
+  border-radius: 10px;
+  padding: 16px 58px;
   border: 3px solid rgb(255, 255, 255);
   background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 141.52%;
+}
+.episod:hover {
+  border: 3px solid rgb(213, 13, 31);
+  color: rgb(213, 13, 31);
+  background-color: white;
 }
 h3 {
-  margin-top: 53px;
   font-size: 22px;
   font-weight: 800;
   line-height: 144.52%;
-  letter-spacing: 13.5%;
-  margin-bottom: 32px;
+  letter-spacing: 5.5px;
 }
-.img-week img {
-  margin-right: 40px;
+.week-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
 }
-.img-week img:last-child {
-  margin-right: 0;
+.shevron-icon {
+  display: flex;
+  column-gap: 27px;
+  align-items: center;
+}
+.shevron-icon button {
+  width: 34px;
+  height: 34px;
+  border: 1.54px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 17px;
+}
+.shevron-icon button:hover {
+  border: 1.54px solid rgb(167, 166, 166);
+  color: rgb(167, 166, 166);
+}
+.img-week {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 49px;
 }
 .fixed-icon {
   position: fixed;
@@ -154,27 +233,4 @@ h3 {
   position: absolute;
   margin-left: 59px;
   margin-top: 15px;
-}
-.week-line {
-  width: 918px;
-  font-size: 0;
-}
-.pop-week,
-.shevron-icon {
-  display: inline-block;
-  width: 459px;
-}
-.shevron-icon {
-  font-size: 38px;
-  text-align: right;
-  color: #ffffff;
-}
-.shevron-icon i {
-  margin-right: 24px;
-}
-.shevron-icon i:last-child {
-  margin-right: 0;
-}
-.sh-left {
-  color: rgb(167, 166, 166);
 }
