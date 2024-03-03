@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: white;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  font-style: normal;
+  margin: 0;
+  color: var(--main-color);
+}
+:root {
+  --main-font-family: "Nunito Sans", sans-serif;
+  --main-font-weight: 400;
+  --secondary-font-family: "Roboto", sans-serif;
+  --main-color: black;
+  --secondary-color: rgb(242, 153, 74);
+  --third-color: rgb(63, 154, 183);
+}
+header,
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  font-size: 19px;
+  align-items: center;
+  padding-top: 3.4rem;
+}
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 900;
+  font-size: 32px;
+}
+.links a {
+  display: inline-block;
+  color: var(--main-color);
+  text-decoration: none;
+  margin-right: 1.7rem;
+  position: relative;
+}
+.links a:last-child {
+  margin-right: 0;
+}
+.links a:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin-left: -5px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.links a:hover:after {
+  opacity: 1;
+}
+.frm input,
+button {
+  display: inline-block;
+  border: none;
+  font-size: 19px;
+  font-family: var(--main-font-family);
+  color: var(--main-color);
+}
+.frm input {
+  width: 116px;
+}
+.frm input::placeholder {
+  color: var(--main-color);
+}
+.frm button {
+  padding: 0;
+  background-color: white;
+}
+
+section {
+  font-size: 16px;
+  padding-top: 10rem;
+  padding-bottom: 3.2rem;
+}
+.img-content {
+  width: 40%;
+}
+.main-img {
+  width: 100%;
+}
+.main-content {
+  width: 47%;
+}
+.main-text {
+  padding-right: 8.5rem;
+  border-right: 1px solid rgb(51, 51, 51);
+}
+.main-text h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.fa-plus {
+  color: var(--third-color);
+  font-size: 11px;
+}
+.main-text h1 {
+  padding-top: 0.6rem;
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
+.main-text p {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--main-font-weight);
+  line-height: 180%;
+  letter-spacing: 1px;
+  color: rgb(79, 79, 79);
+  position: relative;
+  padding-top: 6.3rem;
+}
+.main-text p::before {
+  content: "";
+  display: block;
+  width: 188px;
+  height: 6px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 4.4rem;
+}
+.main-media {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.main-media div {
+  display: flex;
+  align-items: center;
+}
+.main-media button {
+  padding: 0 1.3rem 0 0;
+  background-color: white;
+}
+.fa-circle-play {
+  color: var(--third-color);
+  font-size: 85px;
+}
+.main-media span {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: 1px;
+}
+.social_media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social_media a {
+  text-decoration: none;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  transition: all 0.3s ease;
+}
+
+.social_media a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  padding: 2rem 0;
+  margin-bottom: 2.8rem;
+  color: white;
+  font-family: var(--main-font-family);
+}
+.footer-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.footer-block img {
+  margin-left: -20px;
+}
+.footer-block p {
+  padding-left: 2rem;
+  font-weight: var(--main-font-weight);
+  font-size: 20px;
+}
+.footer-block span {
+  font-weight: 700;
+  font-size: 24px;
+}
