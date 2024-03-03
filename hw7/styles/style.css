@@ -109,6 +109,12 @@ section {
 .fa-plus {
   color: var(--third-color);
   font-size: 11px;
+  visibility: hidden;
+}
+.main-text h3:hover {
+  .fa-plus {
+    visibility: visible;
+  }
 }
 .main-text h1 {
   padding-top: 0.6rem;
